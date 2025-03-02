@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-w9*5ib530_$(b7f6$xc=a(15qxetq5@lhthvsd5kcd!yoy8+jy
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost','23.236.56.112']
 
 
 # Application definition
@@ -110,7 +110,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
 
-GOOGLE_API_KEY = os.environ.get('maps_api')
+GOOGLE_API_KEY ="AIzaSyAwXfepBVgPHIqVncZEL3h2ZP26Ob0LpIw"
 
 
 LANGUAGE_CODE = 'en-us'
@@ -127,7 +127,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
